@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Search</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gradient-to-b from-cyan-500 to-yellow-500 min-h-screen flex flex-col items-center py-6"
+  >
+    <h1
+      class="mb-6 text-5xl font-extrabold text-green-300 bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-400 drop-shadow-lg shadow-green-400 tracking-wide"
+    >
+      Recipe Search
+    </h1>
+
+    <div class="mb-4 w-full max-w-lg">
+      <input
+        id="recipeInput"
+        type="text"
+        placeholder="Search for a recipe..."
+        class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring focus:ring-blue-300"
+      />
+    </div>
+    <div
+      id="recipesList"
+      class="w-full max-w-7xl grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+    ></div>
+    <script src="script.js"></script>
+  </body>
+</html>
